@@ -1,7 +1,7 @@
 a='mississippi'
 i=0
 crt=0
-while(i<len(a)-1):
+while(i<len(a)):
     if a[i]=='p':
         crt+=1
         if crt==2:
