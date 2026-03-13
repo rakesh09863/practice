@@ -13,4 +13,3 @@ while(True):
                 break
         print('{} is {}'.format(a, res))
         break
-
