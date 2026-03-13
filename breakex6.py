@@ -1,11 +1,16 @@
 #vowel program
-a=input('enter the value:').lower()
-if a.isdigit():
-    print('don`t enter numbers')
-elif len(a)!=1:
-    print('try again')
-else:
-    res='vowel'
-    if a not in ['a', 'e', 'i', 'o', 'u']:
+while(True):
+    a=input('enter the value:').lower().strip()
+    if len(a)==0:
+        print('try again')
+    elif a.isdigit():
+        print('don`t enter numbers')
+    else:
         res='not vowel'
-    print('{} is {}'.format(a,res))
+        for val in a:
+            if val in ['a', 'e', 'i', 'o', 'u']:
+                res='vowel'
+                break
+        print('{} is {}'.format(a, res))
+        break
+
