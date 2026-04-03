@@ -1,0 +1,10 @@
+finmax=lambda a:'Both are Equal' if len(set(a))==1 else max(a)
+finmin=lambda a:'Both are Equal' if len(set(a))==1 else min(a)
+sumop=lambda a:sum(a)
+a=[int(val) for val in input('Enter the value:').split()]
+res=finmax(a)
+res1=finmin(a)
+res3=sumop(a)
+print('max({})={}'.format(a,res))
+print('min({})={}'.format(a,res1))
+print('sum({})={}'.format(a,res3))
